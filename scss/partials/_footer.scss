@@ -1,0 +1,211 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index:10;
+  text-align: left;
+  background: $card_beige;
+
+	.container {
+    max-width: 100%;
+		@include rem(width, 1050px);
+  }
+
+  hr {
+    border: 0;
+    border-bottom: solid 2px rgba(#e2d2ca, .35);
+
+    @include rem(margin, 43px 0 24px 0)
+  }
+
+  &__inner {
+    @include rem(padding-top, 53px);
+    @include rem(padding-bottom, 30px);
+  }
+
+  &__logo {
+    @include rem(margin-top, 55px);
+
+    img {
+      @include rem(width, 80px);
+    }
+  }
+
+  &__inner {
+    .btn-light {
+      width: 100%;
+      max-width: 225px;
+      text-align: left;
+
+      .fa {
+        float: right;
+
+        @include rem(margin-right, -10px);
+      }
+    }
+  }
+  
+  &__about_us,
+  &__socials {
+    @include clearfix;
+  }
+
+  &__text {
+    font-family: $ff;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    color: #6c5a59;
+
+    @include rem(font-size, 12px);
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-family: $ff-alt;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.2em;
+    color: #5f4745;
+
+    @include rem(margin-bottom, 5px);
+    @include rem(font-size, 13px);
+    @include rem(line-height, 23px);
+    @include rem(margin-right, 8px);
+    @include rem(width, 120px);
+
+    + .footer__text, + .social_list {
+      overflow: hidden;
+    }
+  }
+
+	&__contacts {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		text-align: left;
+    font-family: $ff;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.3px;
+    color: #fffdfb;
+
+    @include rem(font-size, 13px);
+    @include rem(margin-bottom, 10px);
+    @include rem(margin-top, 17px);
+
+    li {
+      @include rem(margin-bottom, 3px);
+    }
+
+		a {
+      @include rem(font-size, 13px);
+      @include rem(line-height, 20px);
+
+      color: #5f4745;
+      font-weight: bold;
+			display: inline-block;
+
+      &:hover {
+        text-decoration: underline;
+      }
+		}
+
+		.fa, img {
+			@include rem(font-size, 36px);
+			@include rem(padding, 0 25px);
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		img {
+			@include rem(width, 90px);
+		}
+	}
+
+	.copy {
+		span {
+			display: block;
+      letter-spacing: -0.01em;
+
+			@include rem(font-size, 12px)
+		}
+
+		img {
+			opacity: .2;
+			@include rem(margin-bottom, 15px);
+		}
+	}
+
+  @media (max-width: 767px) {
+    &__logo {
+      margin-top: 10px;
+    }
+  }
+}
+
+
+.social_list {
+  list-style: none;
+  padding:0;
+  font-size: 0;
+  margin-bottom: 0;
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    @include rem(margin-right,  25px);
+
+    &:last-child {
+      margin-right: 0 !important;
+    }
+
+    &:first-child {
+      @include rem(margin-left,  -8px);
+    }
+
+    a {
+      color: #5f4745;
+
+      @include rem(padding,  7px);
+      @include rem(font-size, 20px);
+      @include transition(all .3s ease);
+
+      &:hover {
+        color: rgba(#5f4745, .7);
+      }
+    }
+  }
+}
+
+.copy {
+  color: #6c5a59;
+
+  img {
+    @include rem(width,  63px);
+  }
+}
+
+
+.footer_form {
+  @include rem(margin-bottom, 62px);
+
+  @media (max-width: 767px) {
+    p {
+      text-align: center;
+    }
+  }
+}

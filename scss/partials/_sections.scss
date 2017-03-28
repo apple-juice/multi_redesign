@@ -1,0 +1,141 @@
+.section {
+  position: relative;
+  z-index: auto;
+
+  @include rem(padding, 74px 0);
+
+  &--lead {
+    color: #fff;
+    background: url(../images/hero-backing-1440@3x.png) no-repeat center;
+
+    @include background-size(cover);
+
+    h2 {
+      font-size: 21px;
+      font-weight: normal;
+      line-height: 1.43;
+
+      @include rem(font-size, 21px);
+    }
+
+    .section_img {
+      position: relative;
+      z-index: 10;
+      margin-bottom: -180px;
+      margin-top: -124px;
+      margin-left: 34px;
+      pointer-events: none;
+    }
+
+    .section_text {
+      position: relative;
+      z-index: 10;
+    }
+
+    .btn {
+      @include rem(margin-top, 56px);
+    }
+  }
+
+  &--app {
+    z-index: 2;
+    margin-top: -240px;
+    margin-bottom: 65px;
+
+    @include rem(padding, 340px 0 0);
+    @include rem(height, 930px);
+
+    .section_bg {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .section_img {
+      margin-right: -13px;
+    }
+
+    p {
+      font-size: 18px;
+
+      @include rem(margin-bottom, 30px);
+    }
+
+    .btn {
+      @include rem(margin-top, 20px);
+    }
+
+    .section_text {
+      @include rem(padding, 90px 20px 90px 0)
+    }
+  }
+
+  &--subscription {
+    @include rem(padding-top, 100px);
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  @media all and (max-width: 767px) {
+    padding: 32px 0;
+
+    &--lead {
+      .btn {
+        margin-top: 26px;
+      }
+
+      .section_img {
+        margin-left: 3px;
+        margin-bottom: -30px;
+        margin-top: 7px;
+        width: 480px;
+      }
+    }
+
+    &--app {
+      margin-top: -466px;
+      padding-top: 445px;
+      height: 1480px;
+
+      .section_bg {
+        width: 960px;
+      }
+    }
+  }
+}
+
+.section_text {
+  @include rem(padding-right, 40px);
+
+  @media all and (max-width: 767px) {
+    padding-right: 0;
+  }
+}
+
+.logo {
+  @include rem(margin-bottom, 52px);
+
+  &__icon {
+    @include rem(margin-left, -7px);
+    @include rem(margin-right, 13px);
+  }
+
+  @media all and (max-width: 767px) {
+    margin-bottom: 33px;
+
+    &__icon {
+      width: 55px;
+      margin-right: 8px;
+    }
+
+    &__text {
+      width: 94px;
+    }
+  }
+}
