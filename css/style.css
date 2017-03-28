@@ -333,6 +333,8 @@ h3 { color: #5f4745; font-weight: bold; margin-bottom: 25px; margin-bottom: 1.38
 
 .btn-light + .btn-light { margin-top: 15px; margin-top: 0.8333333333rem; }
 
+@media (max-width: 767px) { .btn-light .fa { margin-top: 2px; } }
+
 .btn-primary, .btn-inverse { font-family: "Poppins", sans-serif; border-radius: 100px; border: 0; box-shadow: 0 3px 0 0 #19659d; text-transform: uppercase; font-weight: 600; font-style: normal; line-height: 1; letter-spacing: 1.5px; text-align: center; background: #339bec; font-size: 16px; padding: 16px 29px 14px; }
 
 .btn-primary .fa, .btn-inverse .fa { font-size: 15px; margin-left: 8px; margin-right: -8px; }

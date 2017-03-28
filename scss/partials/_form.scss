@@ -55,6 +55,12 @@
   + .btn-light {
     @include rem(margin-top, 15px);
   }
+
+  @media (max-width: 767px) {
+    .fa {
+      margin-top: 2px;
+    }
+  }
 }
 
 .btn-primary {
