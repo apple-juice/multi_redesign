@@ -286,7 +286,7 @@ h3 { color: #5f4745; font-weight: bold; margin-bottom: 25px; margin-bottom: 1.38
 @media all and (max-width: 767px) { .section { padding: 32px 0; }
   .section--lead .btn { margin-top: 26px; }
   .section--lead .section_img { margin-left: 3px; margin-bottom: -30px; margin-top: 7px; width: 480px; }
-  .section--app { margin-top: -466px; padding-top: 445px; height: 1480px; }
+  .section--app { margin-top: -466px; padding-top: 445px; margin-bottom: 40px; height: 1480px; }
   .section--app .section_bg { width: 960px; } }
 
 .section_text { padding-right: 40px; padding-right: 2.2222222222rem; }
