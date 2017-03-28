@@ -1,2 +1,2 @@
 # Multi
-https://apple-juice.github.io/multi_page/
+https://apple-juice.github.io/multi_redesign/
