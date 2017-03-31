@@ -19,17 +19,17 @@ h2, .h2 { color: #68504e; font-size: 42px; font-size: 2.3333333333rem; margin-bo
 
 h3 { color: #5f4745; font-weight: bold; margin-bottom: 25px; margin-bottom: 1.3888888889rem; }
 
-.container { width: 1050px; width: 58.3333333333rem; max-width: 100%; }
+.container { max-width: 100%; width: 1080px; width: 60rem; }
 
 .marginauto { float: none; margin-right: auto; margin-left: auto; }
 
 .nopadding { padding: 0; }
 
-.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 { padding-left: 15px; padding-left: 0.8333333333rem; padding-right: 15px; padding-right: 0.8333333333rem; }
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 { padding-left: 30px; padding-right: 30px; }
 
-.row { margin-left: -15px; margin-left: -0.8333333333rem; margin-right: -15px; margin-right: -0.8333333333rem; }
+.row { margin-left: -30px; margin-left: -1.6666666667rem; margin-right: -30px; margin-right: -1.6666666667rem; }
 
-.container { padding-left: 15px; padding-left: 0.8333333333rem; padding-right: 15px; padding-right: 0.8333333333rem; }
+.container { padding-left: 30px; padding-left: 1.6666666667rem; padding-right: 30px; padding-right: 1.6666666667rem; }
 
 .visible-xxs { display: none; }
 
@@ -269,7 +269,7 @@ h3 { color: #5f4745; font-weight: bold; margin-bottom: 25px; margin-bottom: 1.38
 
 .section--app { z-index: 2; margin-top: -240px; margin-bottom: 105px; padding: 340px 0 0; padding: 18.8888888889rem 0 0; height: 930px; height: 51.6666666667rem; }
 
-.section--app .section_bg { width: 100%; position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+.section--app .section_bg { width: 100%; position: absolute; top: 0; left: 0; height: 100%; pointer-events: none; }
 
 .section--app .section_img { margin-right: -13px; }
 
@@ -283,11 +283,17 @@ h3 { color: #5f4745; font-weight: bold; margin-bottom: 25px; margin-bottom: 1.38
 
 .section--subscription p { margin-bottom: 0; }
 
+@media all and (max-width: 991px) { .section--app .section_img { width: 450px; } }
+
 @media all and (max-width: 767px) { .section { padding: 32px 0; }
   .section--lead .btn { margin-top: 26px; }
+  .section--lead h1 { font-size: 24px; }
   .section--lead .section_img { margin-left: 3px; margin-bottom: -30px; margin-top: 7px; width: 480px; }
-  .section--app { margin-top: -466px; padding-top: 445px; margin-bottom: 40px; height: 1480px; }
-  .section--app .section_bg { width: 960px; } }
+  .section--app { margin-top: -466px; padding-top: 445px; margin-bottom: 40px; height: 1440px; }
+  .section--app .section_bg { width: 960px; }
+  .section--app .section_img { width: 440px; } }
+
+@media all and (max-width: 340px) { .section--app .section_img { width: 380px; } }
 
 .section_text { padding-right: 40px; padding-right: 2.2222222222rem; }
 
@@ -443,7 +449,7 @@ h3 { color: #5f4745; font-weight: bold; margin-bottom: 25px; margin-bottom: 1.38
 
 @media (max-width: 767px) { html { font-size: 16px; } }
 
-@media (max-width: 767px) { .container { max-width: 410px !important; width: 100% !important; }
+@media (max-width: 767px) { .container { max-width: 440px !important; width: 100% !important; }
   .social_list__item { margin-right: 26px; }
   .social_list__item a { font-size: 24px; }
   .footer hr { margin-top: 12px; }
